@@ -1,24 +1,35 @@
-<<<<<<< HEAD
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Mind Maze Arena – The Maze That Hunts You
 
-# Run and deploy your AI Studio app
+Mind Maze Arena is a turn-based, AI-driven strategy game where players must navigate a dynamically changing grid-based maze. The unique challenge lies in the **Maze Controller AI**, which observes your movement patterns in real-time and modifies the level to trap you.
 
-This contains everything you need to run your app locally.
+![Game Concept](https://images.unsplash.com/photo-1614850523296-d8c1af93d400?q=80&w=1000&auto=format&fit=crop)
 
-View your app in AI Studio: https://ai.studio/apps/145e997f-71a7-499a-ba72-2cc8678f3b24
+## 🎮 Core Gameplay Mechanics
+- **Turn-Based Movement**: Every move you make triggers a reaction from the environment.
+- **Dynamic Adaptation**: The maze shifts every 3 turns based on your "Player Classification".
+- **Survival or Escape**: Reach the target exit within 5 increasingly difficult levels.
 
-## Run Locally
+## 🧠 The AI "Maze Controller"
+The AI doesn't move a character; it manipulates reality. It tracks your:
+- **Directional Frequency**: Which way do you prefer to turn?
+- **Behavior Profile**:
+    - **Aggressive**: Takes direct paths. AI responds by placing traps in predicted routes.
+    - **Defensive**: Plays safe. AI responds by narrowing corridors and closing paths.
+    - **Explorer**: Moves randomly. AI responds by frequently randomizing the tiles.
+- **Memory Echoes**: The AI leaves visual traces of your previous paths, using them to calculate your next likely position.
 
-**Prerequisites:**  Node.js
+## 🧱 Tile Types
+- **Empty (Default)**: Normal walkable path.
+- **Wall (Indigo)**: Structural blockades.
+- **Trap (Red)**: Damages your integrity. Hit zero and the maze wins.
+- **Teleport (Purple)**: Randomly shifts your position across the grid.
+- **Illusion (Ghostly)**: Paths that appear safe but turn into solid walls every 4 turns.
+- **Exit (Amber)**: Your gateway to the next level.
 
+## 🛠️ Technical Stack
+- **React 19 + TypeScript**: For strict type safety and component architecture.
+- **Vite**: Ultra-fast build tool and dev server.
+- **Tailwind CSS 4**: Modern utility-first styling for the "Neural-Net" aesthetic.
+- **Motion (Framer Motion)**: Smooth, spring-based animations for the player and maze transitions.
+- **Lucide React**: Clean, consistent iconography.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
-=======
-# Mind-Maze-Arena
->>>>>>> 9b551ff27588d748664b4a6933210b1e6f55c065
