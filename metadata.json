@@ -1,0 +1,6 @@
+{
+  "name": "Mind Maze Arena",
+  "description": "An AI-driven strategy game where a dynamic maze observes, learns, and adapts to your playstyle to keep you trapped.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
